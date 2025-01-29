@@ -1,8 +1,5 @@
 package com.campusdual.classroom;
 
-import java.awt.*;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Stack;
 
 public class Exercise25 {
@@ -17,13 +14,11 @@ public class Exercise25 {
 
   public static void printAndEmptyStack(Stack<String> stack) {
     while (!stack.isEmpty()) {
-      System.out.println(stack.remove(stack.size() - 1));
+      System.out.println(stack.pop());
     }
   }
 
   public static void main(String[] args) {
     printAndEmptyStack(createStack());
   }
-
-
 }
